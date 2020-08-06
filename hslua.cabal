@@ -139,8 +139,9 @@ library
                      , FlexibleContexts
                      , FlexibleInstances
                      , ScopedTypeVariables
-  c-sources:           cbits/error-conversion/error-conversion.c
-                     , cbits/error-conversion/hsuserdata.c
+  c-sources:           cbits/error-conversion/hsuserdata.c
+                     , cbits/error-conversion/hscall.c
+                     , cbits/error-conversion/error-conversion.c
   include-dirs:        cbits/error-conversion
 
   if flag(system-lua) || flag(pkg-config)
